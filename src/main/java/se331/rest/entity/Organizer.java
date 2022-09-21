@@ -1,6 +1,4 @@
 package se331.rest.entity;
-
-
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -13,19 +11,13 @@ import javax.persistence.Id;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class Event {
+
+public class Organizer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Exclude
     Long id;
-    String category;
-    String title;
-    String description;
-    String location;
-    String date;
-    String time;
-    Boolean petAllowed;
-    String organizer;
+    String organizerName;
+    String address;
+
 }
-
-
